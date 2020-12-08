@@ -36,19 +36,19 @@
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="./dashboard.html">
+            <a href="{{ url('/home') }}">
               <i class="now-ui-icons design_app"></i>
-              <p>Dashboard</p>
+              <p>Home</p>
             </a>
           </li>
           <li>
-            <a href="./map.html">
+            <a href="/stream">
               <i class="now-ui-icons location_map-big"></i>
               <p>Stream</p>
             </a>
           </li>
           <li>
-            <a href="./notifications.html">
+            <a href="{{ url('/notifications') }}">
               <i class="now-ui-icons ui-1_bell-53"></i>
               <p>Notifications</p>
             </a>
@@ -95,10 +95,10 @@
             </form>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#pablo">
+                <a class="nav-link" href="http://127.0.0.1:8000/upload">
                   <i class="now-ui-icons media-2_sound-wave"></i>
                   <p>
-                    <span class="d-lg-none d-md-block">Stats</span>
+                    <span class="d-lg-none d-md-block">Upload_File</span>
                   </p>
                 </a>
               </li>

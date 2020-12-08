@@ -13,9 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/home', function () {
+    return view('frontend.home');
 });
+
+Route::get('/paper', function () {
+    return view('exam.setpaper');
+});
+
+Route::get('/notifications', function () {
+    return view('notification.popup');
+});
+
 Route::get('/admin', function () {
-    return view('admin.dashboard');
+  return view('admin.dashboard');
 });
+
+Route::get('/stream', function () {
+  return view('dashboard.course');
+});
+
+//Route::get('/', function () {
+  //return view('home');
+//});
